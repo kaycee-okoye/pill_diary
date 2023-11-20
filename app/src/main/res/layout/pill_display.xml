@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/list_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/letterIcon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@drawable/letter_icon_bg"
+            android:gravity="center"
+            android:text="Dosage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/main_contrast"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pillEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:text="Medication Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/dosageEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:text="Dosage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/trashIcon"
+            android:layout_width="@dimen/trash_size"
+            android:layout_height="@dimen/trash_size"
+            android:background="@color/main_contrast"
+            android:gravity="center"
+            android:src="@drawable/trash"
+            android:text="Dosage"
+            app:tint="@color/delete_icon" />
+
+    </LinearLayout>
+</LinearLayout>
+

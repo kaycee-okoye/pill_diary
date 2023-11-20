@@ -1,0 +1,38 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/dialog_bg.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/ic_cancel.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/ic_export.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/ic_filter.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/ic_search.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/ic_swap.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/launch_background.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/letter_icon_bg.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/note.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/plus_sign.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/drawable/trash.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/date_manager.xml" value="0.264" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/entries.xml" value="0.1" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/entry_filter.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/entry_maker.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/list_display.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/medication.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/pill_display.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/pill_maker.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/layout/spinner_text.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.117" />
+        <entry key="..\:/Users/kayce/StudioProjects/pill_diary/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.117" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

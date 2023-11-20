@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/popup_padding_h"
+    android:paddingVertical="@dimen/popup_padding_v">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/popup_button_padding"
+        android:layout_marginTop="@dimen/popup_button_padding"
+        android:text="Add Entry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/inpEntry"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Input Entry e.g symptoms"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_entry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main"
+            android:text="Add"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main_contrast" />
+
+        <Button
+            android:id="@+id/cancel_entry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main_contrast" />
+    </LinearLayout>
+
+
+</LinearLayout>

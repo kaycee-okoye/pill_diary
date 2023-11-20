@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <DatePicker
+        android:id="@+id/inpDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <TimePicker
+        android:id="@+id/inpTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/popup_padding_v"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding_two"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main_contrast"
+            android:text="Confirm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main_contrast"
+            android:text="Back"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding_two"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main_contrast"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+</LinearLayout>

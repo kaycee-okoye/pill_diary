@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/popup_padding_h"
+    android:paddingVertical="@dimen/popup_padding_v">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/popup_button_padding"
+        android:layout_marginTop="@dimen/popup_button_padding"
+        android:layout_marginBottom="@dimen/popup_title_padding"
+        android:text="Add Medication"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/inpPill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:hint="Medication: Paracetamol"
+        android:maxLength="25"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/inpDosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:hint="Dosage: 500mg"
+        android:maxLength="25"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main"
+            android:text="Add"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main_contrast" />
+
+        <Button
+            android:id="@+id/cancel_pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/popup_button_padding"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/main_contrast" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabs.MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appbar"
+        android:theme="@style/Theme.PillDiary.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ViewSwitcher
+                android:id="@+id/switcher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:minHeight="?actionBarSize">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:minHeight="?actionBarSize"
+                    android:padding="@dimen/appbar_padding"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textColor="@color/appbar_text" />
+
+                <EditText
+                    android:id="@+id/app_bar_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/main"
+                    android:gravity="start"
+                    android:hint="@string/search_prompt"
+                    android:inputType="text"
+                    android:minHeight="?actionBarSize"
+                    android:padding="@dimen/appbar_padding"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/appbar_text_hint" />
+            </ViewSwitcher>
+
+
+            <ImageButton
+                android:id="@+id/filter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/appbar"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:onClick="filterSearch"
+                android:padding="@dimen/appbar_padding"
+                android:src="@drawable/ic_filter"
+                app:tint="@color/tab_text" />
+
+            <ImageButton
+                android:id="@+id/swap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/appbar"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:onClick="reverseListOrder"
+                android:padding="@dimen/appbar_padding"
+                android:src="@drawable/ic_swap"
+                app:tint="@color/tab_text" />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/appbar"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:onClick="toggleSearchBarVisibility"
+                android:padding="@dimen/appbar_padding"
+                android:src="@drawable/ic_search"
+                app:tint="@color/tab_text" />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab"
+            app:tabIndicatorColor="@color/main"
+            app:tabTextColor="@color/tab_text" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/plus_sign" />
+
+</LinearLayout>

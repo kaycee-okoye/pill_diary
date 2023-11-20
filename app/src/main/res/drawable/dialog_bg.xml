@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@color/popup_border"/>
+      <corners android:radius="@dimen/popup_rounding"/>
+    </shape>
+  </item>
+  <item android:top="@dimen/popup_top"
+    android:bottom="@dimen/popup_bottom"
+    android:start="@dimen/popup_left"
+    android:end="@dimen/popup_right">
+    <shape android:shape="rectangle">
+      <solid android:color="@color/background"/>
+      <corners android:radius="@dimen/popup_rounding"/>
+    </shape>
+  </item>
+</layer-list>

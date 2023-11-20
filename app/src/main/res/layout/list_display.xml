@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/entry_padding"
+    android:paddingVertical="@dimen/list_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dateEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/entryEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Note"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/trashIcon"
+            android:layout_width="@dimen/trash_size"
+            android:layout_height="@dimen/trash_size"
+            android:background="@color/main_contrast"
+            android:gravity="center"
+            android:src="@drawable/trash"
+            android:text="Dosage"
+            app:tint="@color/delete_icon" />
+
+    </LinearLayout>
+
+</LinearLayout>
