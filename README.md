@@ -20,7 +20,7 @@ The project follows a structured organization within the `com.oaktech.pilldiary.
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/PillDiary.git`
+1. Clone the repository: `git clone https://github.com/kaycee-okoye/pill_diary.git`
 2. Open the project in Android Studio.
 3. Build and run the application on your Android device or emulator.
 
